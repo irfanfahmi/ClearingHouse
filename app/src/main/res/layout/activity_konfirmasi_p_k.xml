@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".form_kerjasama.KonfirmasiPKActivity">
+    <ImageView
+        android:id="@+id/ivLabelMitra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:src="@drawable/ic_label_mitra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDella"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/margin_default"
+        android:src="@drawable/della"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLabelMitra"
+        app:layout_constraintEnd_toEndOf="@+id/ivLabelMitra"
+        app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Della"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivDella"
+        app:layout_constraintEnd_toStartOf="@+id/ivDella"
+        app:layout_constraintStart_toEndOf="@+id/ivPointLeft"
+        app:layout_constraintTop_toTopOf="@+id/ivDella" />
+
+    <ImageView
+        android:id="@+id/ivPointLeft"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/margin_default"
+        android:src="@drawable/ic_pointing_left"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLabelMitra"
+        app:layout_constraintStart_toStartOf="@+id/ivLabelMitra"
+        app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imageView4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="@dimen/margin_default"
+        android:src="@drawable/della"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:visibility="gone"
+
+        android:id="@+id/imageView3"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:background="@drawable/btn_rounded_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLabelMitra" />
+    <TextView
+        android:visibility="gone"
+
+        android:id="@+id/confirm_pengajuan_della"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsreg"
+        android:text="@string/konfirmasi_pengajuan_della1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <TextView
+        android:visibility="gone"
+
+        android:id="@+id/btnYa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default_8dp"
+        android:background="@drawable/btn_rounded_blue_outline"
+        android:gravity="center"
+        android:text="-Ya-"
+        android:padding="@dimen/margin_default"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/primaryColor"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:visibility="gone"
+
+        android:id="@+id/btnTidak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default_8dp"
+        android:background="@drawable/btn_rounded_blue_outline"
+        android:text="-Tidak-"
+        android:gravity="center"
+        android:padding="@dimen/margin_default"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/primaryColor"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/btnYa"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imageView5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="@dimen/margin_default"
+        android:src="@drawable/della"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/btnYa" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imageView6"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="@dimen/margin_default"
+        android:background="@drawable/btn_rounded_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnYa" />
+    <TextView
+        android:id="@+id/tvTerimakasih"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsreg"
+        android:text="@string/terimakasih_pengajuan_della1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

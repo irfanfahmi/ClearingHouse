@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".form_kerjasama.FormKerjasamaActivity">
+
+    <TextView
+        android:id="@+id/ivBgLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:background="@drawable/bg_label"
+        android:fontFamily="@font/poppinsreg"
+        android:padding="@dimen/margin_default"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBgLabel">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/margin_default"
+                android:src="@drawable/della"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Della"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:background="@drawable/btn_rounded_primary_outline"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                tools:layout_editor_absoluteX="16dp" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Perihal"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/view4" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Tanggal"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Asal Pengusul"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Nama"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Unit Satker"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:layout_marginRight="@dimen/margin_default_24"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Dengan ini mengusulkan area kerja sama berikut :"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.33" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text=":"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/tvPerihal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Usulan Kejasama"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView8"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text=":"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/tvTanggal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="05/06/2021"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text=":"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/tvAsalPengusul"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Kemendagri"
+                    android:maxLines="1"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                    app:layout_constraintTop_toTopOf="@+id/textView7" />
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text=":"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Fakhar Ali"
+                    android:maxLines="1"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView15"
+                    app:layout_constraintTop_toTopOf="@+id/textView10" />
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text=":"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/tvUnitSatker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Humas"
+                    android:maxLines="1"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="1:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <EditText
+                    android:id="@+id/spinDirektorat1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/btn_rounded_primary_outline"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:fontFamily="@font/poppinsreg"
+                    android:gravity="center"
+                    android:hint="Pilih"
+                    android:padding="4dp"
+                    android:maxLines="1"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="2:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <EditText
+                    android:id="@+id/spinDirektorat2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/btn_rounded_primary_outline"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:fontFamily="@font/poppinsreg"
+                    android:gravity="center"
+                    android:hint="Pilih"
+                    android:padding="4dp"
+                    android:maxLines="1"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/textView18"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="3:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <EditText
+                    android:id="@+id/spinDirektorat3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/btn_rounded_primary_outline"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppinsreg"
+                    android:editable="false"
+                    android:maxLines="1"
+
+                    android:gravity="center"
+                    android:hint="Pilih"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="4:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <EditText
+                    android:id="@+id/spinDirektorat4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/btn_rounded_primary_outline"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppinsreg"
+                    android:gravity="center"
+                    android:editable="false"
+                    android:maxLines="1"
+
+                    android:hint="Pilih"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView21"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView21" />
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="5:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <EditText
+                    android:id="@+id/spinDirektorat5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/btn_rounded_primary_outline"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:maxLines="1"
+
+                    android:fontFamily="@font/poppinsreg"
+                    android:gravity="center"
+                    android:hint="Pilih"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView22"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+                <EditText
+                    android:id="@+id/etPesan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:background="@drawable/edittext_rounded"
+                    android:fontFamily="@font/poppinsreg"
+                    android:hint="Silahkan Isi Pesan Anda"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinDirektorat5" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:layout_marginBottom="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Tembusan : Admin direktorat hubungan
+ antar Lembaga dan kerjasama,BPIP"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/etPesan" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/btnSubmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:background="@drawable/btn_rounded_secondary"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:padding="@dimen/margin_default"
+                android:fontFamily="@font/poppinsmed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

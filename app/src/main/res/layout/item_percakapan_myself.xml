@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp">
+
+    <ImageView
+        android:id="@+id/image_message_profile"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:visibility="gone"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_message_name_my_self"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        android:layout_marginRight="8dp"
+        android:text="Tunggu Sebentar..."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/image_message_profile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_message_body_my_self"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_edittext_normal"
+        android:maxWidth="240dp"
+        android:padding="16dp"
+        android:fontFamily="@font/poppinsreg"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="2dp"
+        android:text="hello, hello!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_message_name_my_self"
+        app:layout_constraintTop_toBottomOf="@+id/text_message_name_my_self" />
+
+    <TextView
+        android:id="@+id/text_message_time"
+        android:text="11:40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_message_body_my_self"
+        app:layout_constraintRight_toLeftOf="@+id/text_message_body_my_self" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

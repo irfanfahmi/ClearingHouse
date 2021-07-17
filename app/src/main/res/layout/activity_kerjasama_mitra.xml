@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kerjasama.KerjasamaMitraActivity">
+
+    <ImageView
+        android:id="@+id/ivLabelMitra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:src="@drawable/ic_label_mitra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDella"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/margin_default"
+        android:src="@drawable/della"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLabelMitra"
+        app:layout_constraintEnd_toEndOf="@+id/ivLabelMitra"
+        app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Della"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivDella"
+        app:layout_constraintEnd_toStartOf="@+id/ivDella"
+        app:layout_constraintStart_toEndOf="@+id/ivPointLeft"
+        app:layout_constraintTop_toTopOf="@+id/ivDella" />
+
+    <ImageView
+        android:id="@+id/ivPointLeft"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/margin_default"
+        android:src="@drawable/ic_pointing_left"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLabelMitra"
+        app:layout_constraintStart_toStartOf="@+id/ivLabelMitra"
+        app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imageView4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="@dimen/margin_default"
+        android:src="@drawable/della"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:visibility="gone"
+
+        android:id="@+id/imageView3"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:background="@drawable/btn_rounded_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLabelMitra" />
+
+    <TextView
+        android:visibility="gone"
+
+        android:id="@+id/della_nyapa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsreg"
+        android:padding="8dp"
+        android:text="@string/della_tanya"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:visibility="gone"
+
+        android:id="@+id/imageView6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="@dimen/margin_default"
+        android:src="@drawable/della"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <ImageView
+        android:visibility="gone"
+
+        android:id="@+id/imageView5"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:background="@drawable/btn_rounded_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/della_nyapa" />
+    <TextView
+        android:visibility="gone"
+
+        android:id="@+id/della_terimakasih"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsreg"
+        android:text="@string/della_terimakasih"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <ImageView
+        android:visibility="gone"
+
+        android:id="@+id/imageView8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="@dimen/margin_default"
+        android:src="@drawable/della"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/della_pilih_kerjasama" />
+
+    <ImageView
+        android:visibility="gone"
+
+        android:id="@+id/imageView7"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:background="@drawable/btn_rounded_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/della_terimakasih" />
+
+    <TextView
+        android:visibility="gone"
+
+        android:id="@+id/della_pilih_kerjasama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsreg"
+        android:padding="8dp"
+        android:text="@string/della_pilih_kerjasama"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8">
+
+        <TextView
+            android:visibility="gone"
+
+            android:id="@+id/btnMOU"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_default_8dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_blue_outline"
+            android:fontFamily="@font/poppinsreg"
+            android:padding="@dimen/margin_default_8dp"
+            android:text="Mou"/>
+
+        <TextView
+            android:visibility="gone"
+
+            android:id="@+id/btnPks"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_default_8dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_blue_outline"
+            android:fontFamily="@font/poppinsreg"
+            android:padding="@dimen/margin_default_8dp"
+            android:text="Pks" />
+
+        <TextView
+            android:visibility="gone"
+
+            android:id="@+id/btnMonev"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_default_8dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_blue_outline"
+            android:fontFamily="@font/poppinsreg"
+            android:padding="@dimen/margin_default_8dp"
+            android:text="Monev"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

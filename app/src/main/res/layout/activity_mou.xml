@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mitra_mou.MouActivity">
+
+    <ImageView
+        android:id="@+id/ivLabelMitra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:src="@drawable/ic_label_mitra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDella"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/margin_default"
+        android:src="@drawable/della"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLabelMitra"
+        app:layout_constraintEnd_toEndOf="@+id/ivLabelMitra"
+        app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Della"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivDella"
+        app:layout_constraintEnd_toStartOf="@+id/ivDella"
+        app:layout_constraintStart_toEndOf="@+id/ivPointLeft"
+        app:layout_constraintTop_toTopOf="@+id/ivDella" />
+
+    <ImageView
+        android:id="@+id/ivPointLeft"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/margin_default"
+        android:src="@drawable/ic_pointing_left"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLabelMitra"
+        app:layout_constraintStart_toStartOf="@+id/ivLabelMitra"
+        app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMou"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLabelMitra" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

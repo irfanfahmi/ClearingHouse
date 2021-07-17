@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Clearing House</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_media">Media</string>
+    <string name="nav_inbox">Inbox</string>
+    <string name="nav_profile">Profile</string>
+    <!--    <string name="base_url">http://192.168.1.4/clearinghouse/api/</string>-->
+    <!--        <string name="base_url">http://apiku.lurredev.com/api/</string>-->
+    <string name="base_url">http://clearing-house-app.com/api/</string>
+<!--    <string name="base_url">http://clearinghouse.bpip.go.id/api/</string>-->
+
+
+    <string name="text_name">Hallo Fakhar</string>
+    <string name="text_id">ID : 20210606/Dirjen/Humas</string>
+    <string name="saran">Saran &amp; Masukan</string>
+
+    <string name="berita">Berita Terbaru</string>
+
+    <string name="ketentuan_daftar">Dengan mendaftar, saya menyetujui aturan
+Panduan Layanan dan Kebijakan Privasi</string>
+
+    <string name="desc_direktorat">Direktorat Sosialisasi, Komunikasi, dan Jaringan mempunyai
+tugas melaksanakan penyusunan dan pelaksanaan kebijakan
+teknis dan program strategis serta pelaksanaan sosialisasi,
+komunikasi, dan jaringan, pelaksanaan koordinasi relawan
+gerakan kebajikan Pancasila, penyebarluasan pemahaman,
+penghayatan, dan pengamalan Pancasila, dan
+mengembangkan komunikasi dengan media massa dalam
+rangka pembinaan ideologi Pancasila</string>
+
+    <string name="perkenalan_della">Hi..
+Perkenalkan saya "DELLA"
+        selamat datang di <b>Rumah Kerjasama</b>
+saya siap membantu kamu
+melakukan kerjasama dengan
+BPIP
+</string>
+
+    <string name="perkenalan_della2">Hi..
+Perkenalkan saya "DELLA"
+        selamat datang di <b>Rumah Gotong Royong</b>
+saya siap membantu anda
+dalam bekerjasama dengan
+BPIP
+</string>
+
+    <string name="kerjasama_della">Hai..Fakhar Selamat Datang
+Silahkan Pilih Area kerjasama yang anda inginkan</string>
+
+
+    <string name="penjelasan_direktorat_della">Haii..Bambang berikut  penjelasan tugas Direktorat sosialisasi</string>
+
+    <string name="konfirmasi_pengajuan_della1">Apakah anda sudah yakin dengan form pengajuan kerjasama ini ?</string>
+    <string name="konfirmasi_pengajuan_della2">Apakah Anda sudah yakin dengan form luring ini?</string>
+    <string name="konfirmasi_pengajuan_della3">Apakah Anda sudah yakin dengan form saran/masukan/aduan ini?</string>
+
+    <string name="terimakasih_pengajuan_della1">Terimakasih atas kerjasama yang diingingkan Della akan notifikasi kelanjutanya ya</string>
+    <string name="terimakasih_pengajuan_della2">Terimakasih atas pengajuan luring yang diberikan. Della akan notifikasi kelanjutannya ya</string>
+    <string name="terimakasih_pengajuan_della3">Terimakasih atas saran/masukan/aduan yang diberikan. Della akan notifikasi kelanjutannya ya</string>
+
+    <string name="della_tanya">Haii..Arif selamat dating Apa yang bisa saya bantu</string>
+    <string name="della_terimakasih">Terima kasih anda sudah bekerja sama dengan BPIP</string>
+    <string name="della_pilih_kerjasama">Silahkan pilih kerjasama anda</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

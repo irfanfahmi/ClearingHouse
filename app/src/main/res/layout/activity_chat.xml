@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.ChatActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivLabelMitra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default"
+            android:src="@drawable/ic_label_mitra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivDella"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/margin_default"
+            android:src="@drawable/della"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLabelMitra"
+            app:layout_constraintEnd_toEndOf="@+id/ivLabelMitra"
+            app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Della"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDella"
+            app:layout_constraintEnd_toStartOf="@+id/ivDella"
+            app:layout_constraintStart_toEndOf="@+id/ivPointLeft"
+            app:layout_constraintTop_toTopOf="@+id/ivDella" />
+
+        <ImageView
+            android:id="@+id/ivPointLeft"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/margin_default"
+            android:src="@drawable/ic_pointing_left"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLabelMitra"
+            app:layout_constraintStart_toStartOf="@+id/ivLabelMitra"
+            app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPercakapan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_above="@+id/layout_enter_comment"
+            app:layout_constraintBottom_toTopOf="@+id/layout_enter_comment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLabelMitra" />
+
+        <LinearLayout
+            android:id="@+id/layout_enter_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D3D3D3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="2dp"
+                        android:id="@+id/edittext_follow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Tambahkan Komentar..."
+                        android:background="@null"
+                        android:inputType="textCapSentences"
+                        android:maxLength="200"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottom_write_bar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:onClick="submitComment"-->
+                    <!--android:src="@drawable/ic_send_white_24dp"-->
+                    <!--app:backgroundTint="@color/dark_red"-->
+                    <!--app:fabSize="mini" />-->
+                    <TextView
+                        android:id="@+id/send_follow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="Kirim"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryColor"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

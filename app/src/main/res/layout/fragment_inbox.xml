@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inbox.InboxFragment">
+
+    <ImageView
+        android:id="@+id/ivLabelMitra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:src="@drawable/ic_label_mitra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:text="Notif"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPointLeft"
+        app:layout_constraintEnd_toEndOf="@+id/ivLabelMitra"
+        app:layout_constraintStart_toEndOf="@+id/ivPointLeft"
+        app:layout_constraintTop_toTopOf="@+id/ivPointLeft" />
+
+    <ImageView
+        android:id="@+id/ivPointLeft"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/margin_default"
+        android:src="@drawable/ic_pointing_left"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLabelMitra"
+        app:layout_constraintStart_toStartOf="@+id/ivLabelMitra"
+        app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
+
+    <TextView
+        android:id="@+id/tvNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Tidak ada data"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListNotifikasi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLabelMitra" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/btnTanyaDella"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/margin_default"
+        android:src="@drawable/btn_rounded_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTanyaDella"
+        app:layout_constraintEnd_toEndOf="@+id/btnTanyaDella"
+        app:layout_constraintStart_toStartOf="@+id/btnTanyaDella"
+        app:layout_constraintTop_toTopOf="@+id/btnTanyaDella">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsreg"
+            android:textColor="@color/white"
+            android:text="Tanya Della" />
+
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/della" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

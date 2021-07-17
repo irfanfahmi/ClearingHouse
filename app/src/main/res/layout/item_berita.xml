@@ -1,0 +1,40 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_bg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/btn_rounded_primary_outline"
+            android:padding="@dimen/margin_corner_small">
+
+    <ImageView
+        android:id="@+id/iv_berita"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_placeholder"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small_5dp"
+        android:text="Baca Selengkapnya"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_default"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:fontFamily="@font/poppinsreg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>

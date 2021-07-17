@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".form_luring.FormLuringActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:background="@drawable/ic_label_mitra"
+        android:fontFamily="@font/poppinsreg"
+        android:padding="@dimen/margin_default"
+        android:text="Fasilitasi Pertemuan"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/margin_default"
+                android:src="@drawable/della"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Della"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:background="@drawable/btn_rounded_primary_outline"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                tools:layout_editor_absoluteX="16dp" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Perihal"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/view4" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Tanggal"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/etPerihal" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Asal Pengusul"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Nama"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Unit Satker"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:layout_marginRight="@dimen/margin_default_24"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Tema Pertemuan:"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.33" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text=":"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <EditText
+                    android:id="@+id/etPerihal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:background="@drawable/edittext_rounded"
+                    android:fontFamily="@font/poppinsreg"
+                    android:hint="Perihal"
+                    android:maxLines="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView8"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text=":"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/tvTanggal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="05/06/2021"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text=":"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/tvAsalPengusul"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Kemendagri"
+                    android:maxLines="1"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                    app:layout_constraintTop_toTopOf="@+id/textView7" />
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text=":"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Fakhar Ali"
+                    android:maxLines="1"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView15"
+                    app:layout_constraintTop_toTopOf="@+id/textView10" />
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text=":"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/tvUnitSatker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Humas"
+                    android:maxLines="1"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+
+                <EditText
+                    android:id="@+id/etPesan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default"
+                    android:layout_marginTop="204dp"
+                    android:background="@drawable/edittext_rounded"
+                    android:fontFamily="@font/poppinsreg"
+                    android:hint="*Max 200 Karakter"
+                    android:maxLength="200"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:layout_marginRight="@dimen/margin_default_24"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Usulan Waktu Pertemuan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/etPesan" />
+
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Tanggal"
+                    app:layout_constraintBottom_toBottomOf="@+id/etTanggal"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/etTanggal" />
+
+
+                <EditText
+                    android:id="@+id/etTanggal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:background="@drawable/edittext_rounded"
+                    android:fontFamily="@font/poppinsreg"
+                    android:hint="Tanggal"
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginBottom="23dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Waktu"
+                    app:layout_constraintBottom_toBottomOf="@+id/etWaktu"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/etWaktu" />
+
+                <EditText
+                    android:id="@+id/etWaktu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:background="@drawable/edittext_rounded"
+                    android:fontFamily="@font/poppinsreg"
+                    android:hint="Waktu"
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toBottomOf="@+id/etTanggal" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginBottom="23dp"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Jenis Pertemuan"
+                    app:layout_constraintBottom_toBottomOf="@+id/etJenisPertemuan"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="@+id/etJenisPertemuan" />
+
+                <EditText
+                    android:id="@+id/etJenisPertemuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default_8dp"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:background="@drawable/edittext_rounded"
+                    android:fontFamily="@font/poppinsreg"
+                    android:hint="Luring/Daring"
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toBottomOf="@+id/etWaktu" />
+
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginTop="@dimen/margin_default"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:layout_marginBottom="@dimen/margin_default"
+                    android:fontFamily="@font/poppinsreg"
+                    android:text="Tembusan : Admin direktorat hubungan
+ antar Lembaga dan kerjasama,BPIP"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/view4"
+                    app:layout_constraintTop_toBottomOf="@+id/etJenisPertemuan" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/btnSubmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:background="@drawable/btn_rounded_blue_outline"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:padding="@dimen/margin_default"
+                android:gravity="center"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/primaryColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <TextView
+                android:id="@+id/btnBatal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:background="@drawable/btn_rounded_blue_outline"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:padding="@dimen/margin_default"
+                android:text="Batal"
+                android:textAllCaps="false"
+                android:textColor="@color/primaryColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
