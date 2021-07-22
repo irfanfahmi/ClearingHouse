@@ -43,6 +43,14 @@ class ChatActivity : AppCompatActivity(),ChatContract.View {
 //        }
 //        handler.post(refresh)
 
+        btn_refresh.setOnClickListener {
+            mActionListener?.cekPercakapan(DataConfig.getString(DataConfig.USER_ID),idDirektorat.toString())
+        }
+        sr_percakapan.setOnRefreshListener {
+            mActionListener?.cekPercakapan(DataConfig.getString(DataConfig.USER_ID),idDirektorat.toString())
+            sr_percakapan.isRefreshing = false
+        }
+
         send_follow.setOnClickListener {
             mActionListener?.postPercakapan(DataConfig.getString(DataConfig.USER_ID),
                 edittext_follow.getText().toString(),idDirektorat.toString(),

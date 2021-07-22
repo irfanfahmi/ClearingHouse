@@ -29,13 +29,14 @@
             app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
 
         <TextView
+            android:id="@+id/textView38"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsbold"
-            android:text="Della"
             android:gravity="center"
-            android:textSize="20sp"
+            android:text="Della"
             android:textColor="@color/white"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/ivDella"
             app:layout_constraintEnd_toStartOf="@+id/ivDella"
             app:layout_constraintStart_toEndOf="@+id/ivPointLeft"
@@ -51,17 +52,48 @@
             app:layout_constraintStart_toStartOf="@+id/ivLabelMitra"
             app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
 
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/btn_refresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_default"
+            android:src="@drawable/btn_circle_secondary"
+            app:layout_constraintBottom_toBottomOf="@+id/textView38"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivLabelMitra" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvPercakapan"
-            android:layout_width="match_parent"
+        <ImageView
+            android:visibility="gone"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_default"
+            android:src="@drawable/ic_baseline_refresh_24"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_refresh"
+            app:layout_constraintEnd_toEndOf="@+id/btn_refresh"
+            app:layout_constraintStart_toStartOf="@+id/btn_refresh"
+            app:layout_constraintTop_toTopOf="@+id/btn_refresh" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/sr_percakapan"
+            android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginTop="@dimen/margin_default"
             android:layout_above="@+id/layout_enter_comment"
             app:layout_constraintBottom_toTopOf="@+id/layout_enter_comment"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivLabelMitra" />
+            app:layout_constraintTop_toBottomOf="@+id/ivLabelMitra">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPercakapan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
         <LinearLayout
             android:id="@+id/layout_enter_comment"
@@ -113,14 +145,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
-                    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton-->
-                    <!--android:layout_width="50dp"-->
-                    <!--android:layout_height="50dp"-->
-                    <!--android:layout_gravity="center_vertical"-->
-                    <!--android:onClick="submitComment"-->
-                    <!--android:src="@drawable/ic_send_white_24dp"-->
-                    <!--app:backgroundTint="@color/dark_red"-->
-                    <!--app:fabSize="mini" />-->
+
                     <TextView
                         android:id="@+id/send_follow"
                         android:layout_width="wrap_content"
